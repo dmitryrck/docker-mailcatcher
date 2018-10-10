@@ -5,9 +5,6 @@ Add this to your `docker-compose.yml`:
 ```yaml
   mailcatcher:
     image: dmitryrck/mailcatcher
-    command: "mailcatcher -f -v --ip 0.0.0.0"
-    expose:
-      - 1025
     ports:
       - "1080:1080"
 ```
